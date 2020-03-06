@@ -1,0 +1,32 @@
+{
+  "name": "push_server",
+  "version": "1.0.0",
+  "description": "Web Push Server",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/",
+    "vapid": "node_modules/web-push/src/cli.js generate-vapid-keys --json > server/vapid.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pwa",
+    "push-server"
+  ],
+  "author": "Fernanda Witter <witter.fernanda@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FernandaWitter/push-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FernandaWitter/push-server/issues"
+  },
+  "homepage": "https://github.com/FernandaWitter/push-server#readme",
+  "dependencies": {
+    "node": "^13.10.1",
+    "node-storage": "0.0.9",
+    "storage": "^0.2.0",
+    "urlsafe-base64": "^1.0.0",
+    "web-push": "^3.4.3"
+  }
+}
